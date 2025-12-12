@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+  .char-correct { @apply text-green-600; }
+  .char-incorrect { @apply text-red-600 bg-red-100; }
+  .char-current { @apply bg-yellow-300 text-black; }
+}

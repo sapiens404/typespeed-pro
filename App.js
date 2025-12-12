@@ -227,15 +227,6 @@ export default function App() {
 
         <nav className="bg-white dark:bg-gray-800 border-b">
           <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-6 py-6">
-
-                        <button onClick={() => setTab("about")} 
-              className={`px-8 py-3 rounded-full font-bold ${tab==="about"?"bg-indigo-600 text-white":"bg-gray-200 dark:bg-gray-700"}`}>
-              About
-            </button>
-            <button onClick={() => setTab("privacy")} 
-              className={`px-8 py-3 rounded-full font-bold ${tab==="privacy"?"bg-indigo-600 text-white":"bg-gray-200 dark:bg-gray-700"}`}>
-              Privacy Policy
-            </button>
             {["test","games","basics","articles","jobs","contact"].map(t => (
               <button key={t} onClick={() => setTab(t)}
                 className={`px-10 py-4 rounded-full font-bold text-xl ${tab===t?"bg-gradient-to-r from-indigo-600 to-purple-600 text-white":"bg-gray-200 dark:bg-gray-700"}`}>
@@ -244,9 +235,6 @@ export default function App() {
             ))}
           </div>
         </nav>
-
-              {tab === "about" && <About />}
-              {tab === "privacy" && <PrivacyPolicy />}
 
         <main className="flex-1 max-w-7xl mx-auto p-8">
           {/* TEST TAB */}

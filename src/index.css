@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional custom styles */
+/* Custom styles (optional) */
 body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(to bottom right, #eef2ff, #e9d5ff);
 }
